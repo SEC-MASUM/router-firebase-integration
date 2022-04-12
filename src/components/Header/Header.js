@@ -13,6 +13,7 @@ const Header = () => {
         <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
         <Link to="/orders">Orders</Link>
+        {user && <Link to="/shipping">Shipping</Link>}
         <Link to="/register">Register</Link>
         <span>{user?.displayName && user.displayName}</span>
         {user?.uid ? (
